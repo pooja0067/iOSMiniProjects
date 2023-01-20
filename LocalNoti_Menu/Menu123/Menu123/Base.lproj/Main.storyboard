@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XXH-kC-bvc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Menu123" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="gda-7q-yig">
+                                <rect key="frame" x="20" y="327" width="118" height="202"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyG-tz-6r1">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="34"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" red="0.54048052229999999" green="0.045724529110000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAJ-r3-1C0">
+                                        <rect key="frame" x="0.0" y="84" width="118" height="34"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Store Locator">
+                                            <color key="titleColor" red="0.54048052229999999" green="0.045724529110000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SX1-SC-Mr4">
+                                        <rect key="frame" x="0.0" y="168" width="38" height="34"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Cart">
+                                            <color key="titleColor" red="0.54048052229999999" green="0.045724529110000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIP-iD-EFb">
+                                <rect key="frame" x="0.0" y="88" width="309" height="130"/>
+                                <color key="backgroundColor" red="0.62086384363304103" green="0.95485009517766495" blue="0.74088517955668864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="tNa-ht-gWL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Smart Celluar">
+                                    <color key="titleColor" red="0.54048052229999999" green="0.045724529110000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whL-nq-BiW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56044172244883472" green="0.7738555897186733" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EIP-iD-EFb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-52.5" id="51f-hM-tu3"/>
+                            <constraint firstItem="gda-7q-yig" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Cn1-Gb-boe"/>
+                            <constraint firstItem="EIP-iD-EFb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LPb-aP-5eq"/>
+                            <constraint firstItem="EIP-iD-EFb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XsW-Ts-ap1"/>
+                            <constraint firstItem="whL-nq-BiW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z9S-MD-Zlh"/>
+                            <constraint firstItem="whL-nq-BiW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="cSa-fY-U18"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="whL-nq-BiW" secondAttribute="trailing" id="if1-W4-NiA"/>
+                            <constraint firstItem="whL-nq-BiW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nkK-Ag-HfJ"/>
+                            <constraint firstItem="gda-7q-yig" firstAttribute="top" secondItem="EIP-iD-EFb" secondAttribute="bottom" constant="109" id="oLc-jx-Hm8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wHv-5x-E0g">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="03z-C1-Ekc">
+                            <connections>
+                                <action selector="menu_run:" destination="BYZ-38-t0r" id="Tg2-fs-r6M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leading" destination="Z9S-MD-Zlh" id="uCC-mq-KvK"/>
+                        <outlet property="trailing" destination="if1-W4-NiA" id="BU4-iY-uAv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653.62318840579712" y="60.9375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5jw-jZ-eWq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XXH-kC-bvc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W3f-T4-gMB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RCT-PG-D9Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHj-M5-m0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-275" y="61"/>
+        </scene>
+    </scenes>
+</document>
