@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="basics_0f_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFX-97-k2C">
+                                <rect key="frame" x="16" y="129" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Fql-4t-77s"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="passDataAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Uf-Qz-2u3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt3-BK-AAp">
+                                <rect key="frame" x="16" y="76" width="382" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="WFX-97-k2C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5W4-tu-Wn0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xt3-BK-AAp" secondAttribute="trailing" constant="16" id="6H6-dr-moT"/>
+                            <constraint firstItem="xt3-BK-AAp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JPu-fv-WNg"/>
+                            <constraint firstItem="xt3-BK-AAp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="WmJ-Wp-59y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WFX-97-k2C" secondAttribute="trailing" constant="16" id="cER-Ft-ypp"/>
+                            <constraint firstItem="WFX-97-k2C" firstAttribute="top" secondItem="xt3-BK-AAp" secondAttribute="bottom" constant="32" id="kHH-a7-gtq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="xt3-BK-AAp" id="uNc-Xb-CuE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="50"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Djt-uD-Xlb">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="3hm-Xf-fwA" customClass="SecondViewController" customModule="basics_0f_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Lm-Gc-ObF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHP-YH-rlO">
+                                <rect key="frame" x="16" y="76" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAo-5W-MNd">
+                                <rect key="frame" x="16" y="142" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="8pL-Q0-1Gf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="3hm-Xf-fwA" eventType="touchUpInside" id="onV-Oa-Z9o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yxy-ci-VGs"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="gAo-5W-MNd" firstAttribute="top" secondItem="FHP-YH-rlO" secondAttribute="bottom" constant="32" id="5Sa-vo-dEK"/>
+                            <constraint firstItem="Yxy-ci-VGs" firstAttribute="trailing" secondItem="FHP-YH-rlO" secondAttribute="trailing" constant="16" id="KNv-cC-7Nf"/>
+                            <constraint firstItem="FHP-YH-rlO" firstAttribute="top" secondItem="Yxy-ci-VGs" secondAttribute="top" constant="32" id="UbH-zG-Rpw"/>
+                            <constraint firstItem="FHP-YH-rlO" firstAttribute="leading" secondItem="Yxy-ci-VGs" secondAttribute="leading" constant="16" id="YbO-v4-Occ"/>
+                            <constraint firstItem="Yxy-ci-VGs" firstAttribute="trailing" secondItem="gAo-5W-MNd" secondAttribute="trailing" constant="16" id="ZCP-gj-XUy"/>
+                            <constraint firstItem="gAo-5W-MNd" firstAttribute="leading" secondItem="Yxy-ci-VGs" secondAttribute="leading" constant="16" id="afC-Mf-rNH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="secondaryTextField" destination="FHP-YH-rlO" id="fRP-dt-Z4l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wiq-HR-tDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="-17"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
